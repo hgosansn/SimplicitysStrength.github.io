@@ -1,5 +1,6 @@
 # Simplicity's Strength
 
+![Rain logo](https://simplicitysstrength.github.io/assets/weather-pouring.svg)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/SimplicitysStrength/SimplicitysStrength.github.io/develop)
 ![GitHub repo size](https://img.shields.io/github/repo-size/SimplicitysStrength/SimplicitysStrength.github.io)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/SimplicitysStrength/SimplicitysStrength.github.io/develop)
@@ -10,7 +11,6 @@
 Kindly hosted by [GitHub Pages](https://pages.github.com/) at [simplicitysstrength.github.io](https://simplicitysstrength.github.io)
 
 ## Contents
-
 
 Mostly an [Angular 9](https://v9.angular.io/docs) [Material](https://material.io/) template
 
@@ -44,5 +44,3 @@ Fix the meta tags currently struggling
 Add more page templates for articles, events, topics ...
 
 Write some article about this page for visibility
-
-

@@ -29,7 +29,7 @@
               "src/assets/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styling/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

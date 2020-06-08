@@ -92,27 +92,27 @@ header{
 .text {
   display: inline-block;
   background-color: mat-color($foreground, text);
-  height: 0.5em;
+  min-height: 0.8em;
   border-radius: 100px;
   margin: 5px 0;
   min-width: 100px;
   opacity: 1;
 
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &.link {
-    background-color: var(--blue);
+    background-color: mat-color($primary);
     opacity: .4;
   }
 
   &.line{
     width: 100%;
+  }
+  &.word{
+    min-width: 1em;
+    min-height: 1em;
+  }
+  &.dot{
+    min-width: 1em;
+    min-height: 1em;
   }
   &.title{
     height: 1em;

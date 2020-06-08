@@ -1,5 +1,5 @@
-<div class="spotlight" fxLayout="column" fxLayoutAlign="start center">
-  <div fxFlex="grow" class="wrapper">
+<div id="spotlight" class="spotlight" fxLayout="column" fxLayoutAlign="start center">
+  <div fxFlex="grow" fxLayout="column" class="wrapper">
     <div fxFlex fxLayout="row-reverse">
       <!-- Image -->
       <div class="spotlight_context" fxFlex="0 1 40%" fxLayoutAlign="center center">
@@ -20,5 +20,19 @@
         <br>
         <div fxLayout="row-reverse"><div class="text"></div></div>
       </div>
+      <!--  -->
     </div>
+    <div  class="drops" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="2em">
+      <ng-container *ngFor="let i of pictureIds; let k = index;">
+        <!--  -->
+        <div class="drops_el" (click)="changePicture(i)">
+          <div  class="text word warn primary">
+            <!-- Css trick to load all images at page load and get smooth transitions -->
+            <span class="dropLoader" [ngStyle]="{'background-image': 'url(' + unsplashUrl + i + ')' }"></span>
+          </div>
+        </div>
+      </ng-container>
+
+    </div>
+  </div>
 </div>

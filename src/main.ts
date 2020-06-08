@@ -9,8 +9,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 
-import { FrontPageModule } from './app/front-page/front-page.module';
-import { RootComponent } from './app/front-page/root/root.component';
+import { FrontPageModule } from './app/template/front-page.module';
+import { RootComponent } from './app/template/root/root.component';
 
 
 const globalRippleConfig: RippleGlobalOptions= {

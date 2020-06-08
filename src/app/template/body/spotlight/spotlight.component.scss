@@ -2,7 +2,9 @@
 @import 'variables.scss';
 
 .spotlight{
-  background-image: url("https://source.unsplash.com/VviFtDJakYk");
+  //background-image: url("https://source.unsplash.com/VviFtDJakYk");
+  transition: background-image 1s ease-in-out;
+  transform: translateZ(0);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -23,3 +25,20 @@
   }
 }
 
+.drops{
+  padding: 16px 5vw;
+  &_el{
+    transition: transform 0.5s ease-in;
+    transform: scale(1);
+    transform-origin: center;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.5);
+
+    }
+  }
+}
+
+.dropLoader{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+}

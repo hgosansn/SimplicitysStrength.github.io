@@ -1,7 +1,7 @@
 <div class="articles" fxLayout="column" fxLayoutAlign="start center">
   <!-- fxHide.lt-lg -->
-  <div fxFlex="grow" class="wrapper" fxHide.lt-lg fxLayoutAlign.lt-lg="space-evenly center" >
-      <mat-grid-list  fxFill cols="3" rowHeight="15em">
+  <div fxFlex="grow" class="wrapper" fxHide fxShow.lg fxShow.gt-lg fxLayoutAlign.lt-lg="center center" >
+      <mat-grid-list fxLayoutAlign="start center" cols="3">
         <mat-grid-tile
           *ngFor="let tile of articles"
           [colspan]="1"
@@ -11,7 +11,7 @@
       </mat-grid-list>
   </div>
   <!-- fxHide fxShow.lt-md -->
-  <div fxFlex="grow" class="wrapper" fxHide fxShow.lt-md fxLayout="row wrap" fxLayoutAlign.lt-lg="space-evenly center" >
+  <div fxFlex="grow" class="wrapper" fxHide.gt-lg fxHide.lg fxShow.lt-md fxLayout="row wrap" fxLayoutAlign.lt-lg="space-evenly center" >
     <!-- fxLayout="row wrap" -->
     <ng-container *ngFor="let item of articles">
       <a-preview fxFlex.lt-md="1 1 100%" fxFlex.lt-lg="1 1 40%"></a-preview>

@@ -1,0 +1,38 @@
+<div class="full-article" fxLayout="column" fxLayoutAlign="start center">
+  <div fxFlex="grow" fxLayout="column" class="wrapper">
+    <div fxLayout="row" class="full-article_title">
+      <div fxLayout="column" fxLayoutAlign="end start" fxLayoutGap="gappx">
+        <div fxLayout="row" fxLayoutGap="1em">
+          <div class="text title"></div>
+          <div class="text title"></div>
+        </div>
+        <div class="text"></div>
+      </div>
+    </div>
+    <div fxFlex="grow" fxLayout="row-reverse wrap">
+
+      <ul class="full-article_index">
+        <li *ngFor="let item of paraphs;let i = index" fxLayoutAlign="start center">
+          <a [href]="'#head'+i">
+            <div class="text word"></div>&nbsp;&nbsp;<div class="text"></div>
+          </a>
+        </li>
+      </ul>
+      <div class="full-article_content" fxFlex>
+        <ng-container *ngFor="let item of paraphs;let i = index">
+          <div [id]="'header'+i" class="full-article_content_p" fxLayout="column" fxLayoutAlign="start start">
+            <div class="text line"></div>
+            <div class="text line"></div>
+            <div class="text line"></div>
+            <div class="text line"></div>
+            <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1em">
+              <div class="text"></div>
+              <div class="text"></div>
+              <div class="text"></div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

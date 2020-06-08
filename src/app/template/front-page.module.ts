@@ -52,6 +52,8 @@ import { CommonModule } from '@angular/common';
 import { ArticlesComponent } from './body/articles/articles.component';
 import { CarouselComponent } from './body/carousel/carousel.component';
 import { FrontRoutingModule } from './front-routing.module';
+import { A1Component } from './pages/a1/a1.component';
+import { FullArticleComponent } from './body/full-article/full-article.component';
 
 @NgModule({
   imports: [
@@ -111,6 +113,8 @@ import { FrontRoutingModule } from './front-routing.module';
     ArticlePreviewComponent,
     ArticlesComponent,
     CarouselComponent,
+    A1Component,
+    FullArticleComponent,
   ],
   providers: []
 })

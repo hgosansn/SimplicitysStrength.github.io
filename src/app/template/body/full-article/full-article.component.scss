@@ -1,0 +1,18 @@
+.full-article{
+  min-height: 90vh;
+  &_title{
+    min-height: 200px;
+    padding: 1em;
+  }
+  &_content{
+    &_p{
+      margin-bottom: 2em;
+    }
+  }
+  &_index{
+
+  }
+  &_index, &_content{
+    margin: 2em 1em;
+  }
+}

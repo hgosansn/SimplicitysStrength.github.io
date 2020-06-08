@@ -3,7 +3,7 @@
     <div fxFlex class="carousel_box">
       <div class="carousel_box_row" fxFlex fxLayout="row" fxLayoutAlign="start stretch">
         <ng-container *ngFor="let item of carouselElements; let n = index">
-          <div [id]="'carousel_' + n" class="carousel_box_row_item" fxFlex="1 0 30%" fxLayout="row" fxLayoutAlign="center center">
+          <div [id]="'carousel_' + n" class="carousel_box_row_item" fxFlex="1 0 20%" fxFlex.lt-md="1 0 30%" fxLayout="row" fxLayoutAlign="center center">
             <div>{{item}}</div>
           </div>
         </ng-container>
