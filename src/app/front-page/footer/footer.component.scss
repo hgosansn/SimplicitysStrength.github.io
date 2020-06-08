@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@import 'variables.scss';
+
+
+.pageFooter{
+  min-height: 200px;
+  padding: 1em 0;
+  border-top: 2px solid mat-color($primary, A400);
+  &_category{
+    padding: 1em;
+  }
+  &_row{
+    padding-top: 1em;
+  }
+}
+

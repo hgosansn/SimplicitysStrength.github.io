@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@import 'variables.scss';
+
+.spotlight{
+  background-image: url("https://source.unsplash.com/VviFtDJakYk");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  min-height: 300px;
+  border-bottom: 2px solid mat-color($primary);
+  &_context{
+    min-height: 300px;
+    &_image{
+      color: mat-color($background, background);
+    }
+  }
+  &_feature{
+    & .text {
+      background-color: mat-color($background, background);
+    }
+    padding: 5vw;
+  }
+}
+
