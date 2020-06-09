@@ -1,5 +1,5 @@
 <div class="full-article" fxLayout="column" fxLayoutAlign="start center">
-  <div fxFlex="grow" fxLayout="column" class="wrapper">
+  <div fxFlex="grow" fxLayout="column" fxLayoutAlign="start stetch" class="wrapper">
     <div fxLayout="row" class="full-article_title">
       <div fxLayout="column" fxLayoutAlign="end start" fxLayoutGap="gappx">
         <div fxLayout="row" fxLayoutGap="1em">
@@ -12,8 +12,8 @@
     <div fxFlex="grow" fxLayout="row-reverse wrap">
 
       <ul class="full-article_index">
-        <li *ngFor="let item of paraphs;let i = index" fxLayoutAlign="start center">
-          <a [href]="'#head'+i">
+        <li *ngFor="let item of paraphs;let i = index" fxLayout="row" fxLayoutAlign="start center">
+          <a [href]="page + '#head'+i">
             <div class="text word"></div>&nbsp;&nbsp;<div class="text"></div>
           </a>
         </li>
@@ -32,6 +32,12 @@
             </div>
           </div>
         </ng-container>
+      </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="start center" style="overflow: visible;">
+      <div class="wrapper" fxLayout="column" fxLayoutAlign="start stretch">
+        <div fxFlex id="utteranc">
+        </div>
       </div>
     </div>
   </div>

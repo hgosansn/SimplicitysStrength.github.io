@@ -1,4 +1,3 @@
-@import '~@angular/material/theming';
 @import 'variables.scss';
 
 .spotlight{
@@ -14,12 +13,12 @@
   &_context{
     min-height: 300px;
     &_image{
-      color: mat-color($background, background);
+      //color: mat-color($background, background);
     }
   }
   &_feature{
     & .text {
-      background-color: mat-color($background, background);
+      //background-color: mat-color($background, background);
     }
     padding: 5vw;
   }

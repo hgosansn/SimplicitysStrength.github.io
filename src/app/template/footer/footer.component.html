@@ -1,24 +1,29 @@
 
-<div class="pageFooter primary" fxLayout="column" fxLayoutAlign="start center">
-  <div fxFlex="grow" class="wrapper" fxLayout="row" fxLayoutAlign="space-between center">
-    <ng-container *ngFor="let item of [1,2,3]">
-      <div class="pageFooter_category">
-        <div class="text"></div>
-        <div class="text line"></div>
-        <div class="text line"></div>
-        <div class="text line"></div>
-      </div>
-    </ng-container>
-  </div>
-  <div fxLayout="row" class="pageFooter_row" fxLayoutAlign="start center" fxLayoutGap="10px">
-    <span>Made with ❤ by <a href="https://github.com/SimplicitysStrength" target="_blank" >Simplicity's Strength</a></span>
-    <a href="https://github.com/SimplicitysStrength" target="_blank" >
-      <img alt="GitHub followers" src="https://img.shields.io/github/followers/SimplicitysStrength?style=social">
-    </a>
-  </div>
-  <a href="https://twitter.com/intent/tweet?screen_name=simplicitysstr1&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @simplicitysstr1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <div fxLayout="row" class="pageFooter_row" fxLayoutAlign="start start" fxLayoutGap="10px">
-    Kindly hosted by&nbsp;<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+<div class="pageFooter primary" fxLayout="column" fxLayoutAlign="start center" >
+  <div class="wrapper" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="1em">
+    <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+      <ng-container *ngFor="let item of [1,2,3]">
+        <div class="pageFooter_category">
+          <div class="text"></div>
+          <div class="text line"></div>
+          <div class="text line"></div>
+          <div class="text line"></div>
+        </div>
+      </ng-container>
+    </div>
+    <div fxLayout="row" class="pageFooter_row" fxLayoutAlign="start center" fxLayoutGap="1em">
+      <span>Made with ❤ by <a href="https://github.com/SimplicitysStrength" target="_blank">Simplicity's Strength</a></span>
+      <a href="https://github.com/SimplicitysStrength" target="_blank">
+        <img alt="GitHub followers" src="https://img.shields.io/github/followers/SimplicitysStrength?style=social">
+      </a>
+    </div>
+    <div fxLayout="row" class="pageFooter_row" fxLayoutAlign="start start" fxLayoutGap="1em">
+      <a href="mailto:simplicitysstrength@mail.com"><img alt="mailto" src="https://img.shields.io/badge/Mail%20to-simplicitysstrength%40mail.com-blue"></a>
+      <a href="https://twitter.com/intent/tweet?screen_name=simplicitysstr1&ref_src=twsrc%5Etfw"
+        class="twitter-mention-button" data-show-count="false">Tweet to @simplicitysstr1</a>
+    </div>
+    <div fxLayout="row" class="pageFooter_row" fxLayoutAlign="start start" fxLayoutGap="1em">
+      Kindly hosted by&nbsp;<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+    </div>
   </div>
 </div>

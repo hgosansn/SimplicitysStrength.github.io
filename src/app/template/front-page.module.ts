@@ -54,6 +54,9 @@ import { CarouselComponent } from './body/carousel/carousel.component';
 import { FrontRoutingModule } from './front-routing.module';
 import { A1Component } from './pages/a1/a1.component';
 import { FullArticleComponent } from './body/full-article/full-article.component';
+import { B2Component } from './pages/b2/b2.component';
+import { C3Component } from './pages/c3/c3.component';
+import { D4Component } from './pages/d4/d4.component';
 
 @NgModule({
   imports: [
@@ -115,6 +118,9 @@ import { FullArticleComponent } from './body/full-article/full-article.component
     CarouselComponent,
     A1Component,
     FullArticleComponent,
+    B2Component,
+    C3Component,
+    D4Component,
   ],
   providers: []
 })
