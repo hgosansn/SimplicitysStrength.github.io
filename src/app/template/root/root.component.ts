@@ -10,13 +10,12 @@ import { ThemingService } from '../theming.service';
 export class RootComponent implements OnInit {
 
   constructor(private themeService: ThemingService) { }
-  readonly theme1 = ['#111AAA', '#AA33AA', '#AAA44AA', '#55AAA', '#AAA33A'];
+  readonly theme1 = ['#3a3a3a', '#00b4b1', '#eee', '#303030', '#bababa'];
 
   ngOnInit(): void {
 
     // @ts-ignore
-    //this.themeService.setTheme(...this.theme1);
-    this.themeService.setRandomTheme();
+    this.themeService.setTheme(...this.theme1);
   }
 
 }
