@@ -19,12 +19,26 @@
       </ng-container>
     </div>
     <span fxFlex></span>
-    <div class="theme_colors" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1em">
-      <span class="colorPreview accent"></span>
+    <div class="theme_colors" fxLayout="row" [matMenuTriggerFor]="menu" fxLayoutAlign="start center" fxLayoutGap="1em">
       <span class="colorPreview primary"></span>
+      <span class="colorPreview accent"></span>
       <span class="colorPreview warn"></span>
-      <span class="colorPreview foreground"></span>
       <span class="colorPreview background"></span>
+      <span class="colorPreview foreground"></span>
     </div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item *ngFor="let theme of themeArray" (click)="setTheme(theme)">
+        <ng-container
+          *ngTemplateOutlet="colorDefault; context: { $implicit: theme}">
+        </ng-container>
+      </button>
+    </mat-menu>
   </div>
 </div>
+
+
+<ng-template #colorDefault let-themeColor>
+  <div class="theme_colors" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1em">
+    <span class="colorPreview" *ngFor="let color of themeColor" [ngStyle]="{'background-color': color}"></span>
+  </div>
+</ng-template>

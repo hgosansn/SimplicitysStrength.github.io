@@ -24,6 +24,10 @@ export class ThemingService {
     this.saveColor('foreground', foreground);
   }
 
+  createRandomTheme() {
+    return Array.from(Array(5).keys()).map(() => this.getRandomColor());
+  }
+
   setRandomTheme() {
     this.saveColor('primary', this.getRandomColor());
     this.saveColor('accent', this.getRandomColor());

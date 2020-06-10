@@ -14,3 +14,9 @@
   padding:  1em;
 }
 
+.theme_colors{
+  cursor: pointer;
+  &:hover{
+    background-color: mat-color($accent,200);
+  }
+}
