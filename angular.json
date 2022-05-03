@@ -5,7 +5,7 @@
   "defaultProject": "userPage",
   "projects": {
     "userPage": {
-      "root": "",
+      "root": "/ng_template_20",
       "sourceRoot": "src",
       "projectType": "application",
       "schematics": {
@@ -92,7 +92,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-              "baseHref": "https://simplicitysstrength.github.io/"
+              "baseHref": "https://hgosansn.github.io/ng_template_20/"
           }
         }
       }
