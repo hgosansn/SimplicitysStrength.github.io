@@ -1,6 +1,6 @@
 # Simplicity's Strength
 
-![Rain logo](https://simplicitysstrength.github.io/assets/weather-pouring.svg)
+![Rain logo](https://simplicitysstrength.github.io/ng_template_20/assets/weather-pouring.svg)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/SimplicitysStrength/SimplicitysStrength.github.io/develop)
 ![GitHub repo size](https://img.shields.io/github/repo-size/SimplicitysStrength/SimplicitysStrength.github.io)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/SimplicitysStrength/SimplicitysStrength.github.io/develop)
